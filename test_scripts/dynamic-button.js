@@ -46,7 +46,7 @@ describe('Robust Local Testing', async function() {
   });
   
   it('can get properties of element', async function () {
-    let url = 'https://razat-embold.github.io/button.html';
+    let url = 'https://razat-embold.github.io/web_pages/button.html';
     let xPath = '/html/body/div[1]/ul/button';
     
     await driver.get(url);
