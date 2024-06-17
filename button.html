@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Case 1: Element Moved</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul class="menu">
+            <li><a href="./index.html">Back</a></li>
+            <button id="buttonToMove" class="Osjkdhsjdk">Get Started for Free</button>
+        </ul>
+
+        <div class="page">
+            <div class="banner">
+                <h1>Welcome to BrowserStack!</h1>
+            </div>
+        </div>
+    </div>
+
+    <button id="moveButton" onclick="moveButton()">Change Content</button>
+
+    <script>
+        function moveButton() {
+            const button = document.getElementById('buttonToMove');
+            const banner = document.querySelector('.banner');
+            banner.appendChild(button);
+            button.className = 'SJDJDjdksjd'; // Change the class
+            button.textContent = 'Get Started Free'; // Change the text
+        }
+    </script>
+</body>
+
+</html>
