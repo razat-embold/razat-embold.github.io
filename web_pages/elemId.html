@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Identifier Examples</title>
+    <style>
+        .example-class {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- XPath example: Using a class in the div -->
+    <div class="example" id="uniqueElementId">Example Div for XPath and ID</div>
+    
+    <!-- CSS Selector example: Using a class and a child element -->
+    <div class="example-class">
+        <span class="child-element">Child Element for CSS Selector</span>
+    </div>
+
+    <!-- Tag Name example: Using a button tag -->
+    <button>Button for Tag Name</button>
+
+    <!-- Class Name example: Using a class directly -->
+    <div class="example-class">Example Div for Class Name</div>
+
+    <!-- Name example: Using an input with a name attribute -->
+    <input type="text" name="username" placeholder="Enter Username">
+
+    <br>
+
+    <!-- Link Text example: Using an anchor with specific text -->
+    <a href="#">Click here for Link Text</a>
+
+    <br>
+
+    <!-- Partial Link Text example: Using an anchor with partial text -->
+    <a href="#">Click this link for Partial Link Text</a>
+
+    <br>
+
+    <button id="moveButton" onclick="moveButton()">Change Content</button>
+
+    <script>
+        function moveButton() {
+            const button = document.getElementById('buttonToMove');
+            const banner = document.querySelector('.banner');
+            banner.appendChild(button);
+            button.className = 'SJDJDjdksjd'; // Change the class
+            button.textContent = 'Get Started Free'; // Change the text
+        }
+    </script>
+</body>
+</html>
