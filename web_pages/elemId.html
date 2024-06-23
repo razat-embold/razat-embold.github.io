@@ -11,19 +11,20 @@
     </style>
 </head>
 <body>
+  <div id="mainDiv">
     <!-- XPath example: Using a class in the div -->
-    <div class="examle" id="uniquelementId">Example Div for XPath and ID</div>
-    
+    <div class="m4wrCMwCa3" id="uniquelementId">Example Div for XPath and ID</div>
+      
     <!-- CSS Selector example: Using a class and a child element -->
     <div class="example-class">
-        <span class="child-element">Child Element for CSS Selector</span>
+        <span class="K6IHlUiZP4">Child Element for CSS Selector</span>
     </div>
 
     <!-- Tag Name example: Using a button tag -->
-    <button>Button for Tag Name</button>
+    <button type="submit" aria-label="Submit Form" title="Button for Tag Name">Button for Tag Name</button>
 
     <!-- Class Name example: Using a class directly -->
-    <div class="example-class">Example Div for Class Name</div>
+    <div class="7WPg5NiBl4">Example Div for Class Name</div>
 
     <!-- Name example: Using an input with a name attribute -->
     <input type="text" name="username" placeholder="Enter Username">
@@ -31,25 +32,58 @@
     <br>
 
     <!-- Link Text example: Using an anchor with specific text -->
-    <a href="#">Click here for Text</a>
+    <a href="#">Click here for Link Text</a>
 
     <br>
 
     <!-- Partial Link Text example: Using an anchor with partial text -->
-    <a href="#">Click this for Partial Link Text</a>
+    <a href="#">Click this link for Partial Link Text</a>
 
     <br>
+  </div>
 
-    <button id="moveButton" onclick="moveButton()">Change Content</button>
+  <button id="changeButton">Change Button</button>
 
     <script>
-        function moveButton() {
-            const button = document.getElementById('buttonToMove');
-            const banner = document.querySelector('.banner');
-            banner.appendChild(button);
-            button.className = 'SJDJDjdksjd'; // Change the class
-            button.textContent = 'Get Started Free'; // Change the text
-        }
+      const button = document.getElementById('changeButton');
+      const div = document.getElementById('mainDiv');
+
+      // define the function to change the HTML content
+      function changeContent() {
+        div.innerHTML = `
+          
+        <!-- CSS Selector example: Using a class and a child element -->
+        <div class="example-class">
+            <span class="oUiYyJMWQ9">Child Element for CSS Selector</span>
+        </div>
+
+        <!-- Tag Name example: Using a button tag -->
+        <button type="submit" aria-label="Submit Form" title="Button for Tag Name">Button for Tag Name</button>
+
+        <!-- Class Name example: Using a class directly -->
+        <div class="htlVxtVNef">Example Div for Class Name</div>
+
+        <!-- Name example: Using an input with a name attribute -->
+        <input type="text" name="username" placeholder="Enter Username">
+
+        <br>
+
+        <!-- Link Text example: Using an anchor with specific text -->
+        <a href="www.example-page.com">Click here for Link Text</a>
+
+        <br>
+
+        <!-- Partial Link Text example: Using an anchor with partial text -->
+        <a href="www.example-page.com">Click this link for Partial Link Text</a>
+
+        <!-- XPath example: Using a class in the div -->
+        <div class="a8xtmwRDd7" id="uniquelementId">Example Div for XPath and ID</div>
+
+        <br>
+        `;
+      }
+      // add event listener to the button
+      button.addEventListener('click', changeContent);
     </script>
 </body>
 </html>

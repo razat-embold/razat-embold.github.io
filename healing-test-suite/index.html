@@ -1,0 +1,164 @@
+<!-- Search for full path from body of root document (body-3/div-3/) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Various Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+  <div id="mainDiv">
+    <h1>Form with Various Elements</h1>
+    
+    <!-- Select Box -->
+    <label for="selectBox">Choose an option:</label>
+    <select id="selectBox" name="options" aria-label="Choose an option" title="Select an option">
+        <option value="" disabled selected>Select an option</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+
+    <!-- Input Box -->
+    <label for="inputBox">Your Name:</label>
+    <input type="text" id="inputBox" name="name" placeholder="Enter your name" aria-label="Your Name" title="Enter your full name">
+
+    <!-- Radio Buttons -->
+   
+        <legend>Choose a gender:</legend>
+        <input type="radio" id="male" name="gender" value="male" aria-label="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" aria-label="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" aria-label="Other">
+        <label for="other">Other</label>
+
+    <!-- Button -->
+    <button type="submit" aria-label="Submit Form" title="Submit your information">Submit</button>
+
+    <br>
+    <!-- selector code-->
+
+    <!-- XPath example: Using a class in the div -->
+    <div class="m4wrCMwCa3" id="uniquelementId">Example Div for XPath and ID</div>
+      
+    <!-- CSS Selector example: Using a class and a child element -->
+    <div class="example-class">
+        <span class="K6IHlUiZP4">Child Element for CSS Selector</span>
+    </div>
+
+    <!-- Tag Name example: Using a button tag -->
+    <button type="submit" aria-label="Submit Form" title="Button for Tag Name">Button for Tag Name</button>
+
+    <!-- Class Name example: Using a class directly -->
+    <div class="7WPg5NiBl4">Example Div for Class Name</div>
+
+    <!-- Name example: Using an input with a name attribute -->
+    <input type="text" name="username" placeholder="Enter Username">
+
+    <br>
+
+    <!-- Link Text example: Using an anchor with specific text -->
+    <a href="#">Click here for Link Text</a>
+
+    <br>
+
+    <!-- Partial Link Text example: Using an anchor with partial text -->
+    <a href="#">Click this link for Partial Link Text</a>
+  </div>
+  
+  <br>
+
+  <iframe class="spaced" id="simple-iframe-example" title="simple iframe example" width="100%" height="240" src="https://razat-embold.github.io/web_pages/index.html"></iframe>
+
+  <br><br>
+
+  <button id="changeButton">Change Button</button>
+
+  <script>
+  // select the button and the div
+  const button = document.getElementById('changeButton');
+  const div = document.getElementById('mainDiv');
+
+  // define the function to change the HTML content
+  function changeContent() {
+    div.innerHTML = `
+    <div>
+      <div>
+        <div>
+          <!-- Select Box -->
+          <label for="selectBox">Choose an option:</label>
+          <select id="selectBox" name="options" aria-label="Choose an option" title="Select an option">
+        <option value="" disabled selected>Select an option</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+
+      <!-- Input Box -->
+      <label for="inputBox">Your Name:</label>
+      <input type="text" id="inputBox" name="name" placeholder="Enter your name" aria-label="Your Name" title="Enter your full name">
+          <!-- Radio Buttons -->
+          <legend>Choose a gender:</legend>
+          <input type="radio" id="male" name="gender" value="male" aria-label="Male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female" aria-label="Female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="other" aria-label="Other">
+          <label for="other">Other</label>
+  
+      <!-- Button -->
+      <button type="submit" aria-label="Submit Form" title="Submit your information">Submit</button>
+    </div>
+  
+    <h1>Form with Various Elements</h1>
+
+    <!-- selector code-->
+      
+    <!-- CSS Selector example: Using a class and a child element -->
+    <div class="example-class">
+        <span class="oUiYyJMWQ9">Child Element for CSS Selector</span>
+    </div>
+
+    <!-- Tag Name example: Using a button tag -->
+    <button type="submit" aria-label="Submit" title="Button for Tag Name">Button for Tag Name</button>
+
+    <!-- Class Name example: Using a class directly -->
+    <div class="htlVxtVNef">Example Div for Class Name</div>
+  </div>
+
+    <!-- Name example: Using an input with a name attribute -->
+    <input type="text" name="username" placeholder="Enter Username">
+
+    <br>
+
+    <!-- Link Text example: Using an anchor with specific text -->
+    <a href="www.example-page.com">Click here for Link Text</a>
+
+    <br>
+
+    <!-- Partial Link Text example: Using an anchor with partial text -->
+    <a href="www.example-page.com">Click this link for Partial Link Text</a>
+
+    <!-- XPath example: Using a class in the div -->
+    <div class="a8xtmwRDd7" id="uniquelementId">Example Div for XPath and ID</div>
+
+  </div>
+    `;
+  }
+
+  // add event listener to the button
+  button.addEventListener('click', changeContent);
+  </script>
+</body>
