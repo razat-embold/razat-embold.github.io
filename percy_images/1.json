@@ -1,0 +1,38 @@
+[
+    {
+        "top": 355,
+        "bottom": 466,
+        "left": 0,
+        "right": 1920
+    },
+    {
+        "top": 460,
+        "bottom": 937,
+        "left": 0,
+        "right": 1920
+    },
+    {
+        "top": 622,
+        "bottom": 675,
+        "left": 600,
+        "right": 730
+    },
+    {
+        "top": 660,
+        "bottom": 732,
+        "left": 600,
+        "right": 832
+    },
+    {
+        "top": 840,
+        "bottom": 934,
+        "left": 483,
+        "right": 529
+    },
+    {
+        "top": 622,
+        "bottom": 732,
+        "left": 861,
+        "right": 1085
+    }
+]
